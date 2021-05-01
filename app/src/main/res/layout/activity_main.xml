@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/mygamebackground" />
+
+
+    <ImageView
+        android:id="@+id/tap_play"
+        android:layout_width="194dp"
+        android:layout_height="175dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_tap_foreground" />
+
+    <ImageView
+        android:id="@+id/volume_control"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/ic_volume_up_black_24dp" />
+
+    <TextView
+        android:id="@+id/scoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="250sp"
+        android:layout_marginTop="101dp"
+        android:text="@string/score"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/highScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:layout_marginStart="450sp"
+        android:text="@string/highscore"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tap_play"
+        android:textColor="@android:color/holo_green_light"
+        android:text="Tap to Play"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="86dp"
+        android:layout_height="52dp"
+        ads:srcCompat="@drawable/menu"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>

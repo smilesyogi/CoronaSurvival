@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Corona Survival</string>
+    <string name="corona_survival">Corona Survival</string>
+    <string name="tap_to_play_game">Tap to play game</string>
+    <string name="mygamebackground">mygamebackground</string>
+    <string name="highscore">HighScore</string>
+    <string name="score">Score</string>
+    <string name="show_ad">Show Ad</string>
+    <!-- Test application ID="ca-app-pub-3940256099942544~3347511713"-->
+<!--Main Application ID ="ca-app-pub-1084523473410419~9671550978"-->
+
+    <!-- TEST ADD UNITS
+BANNER ADS   "ca-app-pub-3940256099942544/6300978111"
+INTERSTITIAL "ca-app-pub-3940256099942544/1033173712"
+REWARD ADS   "ca-app-pub-3940256099942544/5224354917"
+    -->
+    <string name="reward10">\"Your account is credited by 10 coins \"</string>
+</resources>

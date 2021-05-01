@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".Levels">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/mygamebackground" />
+
+
+
+    <ImageView
+        android:id="@+id/lev1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="50sp"
+        app:srcCompat="@drawable/co1_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEVELS"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="80sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/lev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lev1"
+        android:layout_marginStart="50sp"
+        android:layout_marginBottom="3dp"
+        app:srcCompat="@drawable/co2" />
+
+    <ImageView
+        android:id="@+id/lev3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/co3" />
+
+    <ImageView
+        android:id="@+id/lev4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/co4" />
+
+    <ImageView
+        android:id="@+id/lev5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lev4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="-3dp"
+        app:srcCompat="@drawable/co5" />
+
+</RelativeLayout>
